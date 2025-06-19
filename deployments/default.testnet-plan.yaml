@@ -10,9 +10,9 @@ plan:
       transactions:
         - requirement-publish:
             contract-id: SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard
-            remap-sender: STBHKG39PN5RM085NR10GRKW804T6Y6VT4A194SJ
+            remap-sender: ST11QRHKW246XESA3SYFPWSTR7R6PJQRZ459VS281
             remap-principals:
-              SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE: STBHKG39PN5RM085NR10GRKW804T6Y6VT4A194SJ
+              SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE: ST11QRHKW246XESA3SYFPWSTR7R6PJQRZ459VS281
             cost: 8400
             path: "./.cache/requirements/SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.clar"
             clarity-version: 1
@@ -21,14 +21,14 @@ plan:
       transactions:
         - contract-publish:
             contract-name: defi
-            expected-sender: STBHKG39PN5RM085NR10GRKW804T6Y6VT4A194SJ
+            expected-sender: ST11QRHKW246XESA3SYFPWSTR7R6PJQRZ459VS281
             cost: 716
             path: contracts/extern/defi.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: fungible-token
-            expected-sender: STBHKG39PN5RM085NR10GRKW804T6Y6VT4A194SJ
+            expected-sender: ST11QRHKW246XESA3SYFPWSTR7R6PJQRZ459VS281
             cost: 2336
             path: contracts/fungible-token.clar
             anchor-block-only: true
