@@ -1,0 +1,25 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: defi
+            expected-sender: SP4DXH09AMB9MECTP9W43BPSSBTH6G8R531GM3QZ
+            cost: 716
+            path: contracts/extern/defi.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: fungible-token
+            expected-sender: SP4DXH09AMB9MECTP9W43BPSSBTH6G8R531GM3QZ
+            cost: 2336
+            path: contracts/fungible-token.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.0"
